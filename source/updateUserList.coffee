@@ -1,6 +1,4 @@
-config = require "./config"
-return unless config
-
+return unless (config = require "./config")
 getUsers = (require "./getUsers") config
 sendMessage = (require "./sendMessage") config
 archiveUsers = (require "./archiveUsers") config
